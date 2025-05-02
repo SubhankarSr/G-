@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gवन - Personalized Health & Fitness</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+<!-- Poppins Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Particles Background -->
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+<header class="navbar">
+<div class="logo">G<span>वन</span></div>
+<nav>
+<ul>
+<li><a href="#hero">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+<div class="hero-content" data-aos="fade-up">
+<h1>Unlock Your Best Self</h1>
+<p>Personalized Diet, Fitness, and Health Insights for YOU</p>
+<button onclick="openPopup('diet')">Get Diet Plan</button>
+<button onclick="openPopup('fitness')">Get Fitness Plan</button>
+<button onclick="openPopup('health')">Get Health Insights</button>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+<h2>About Us</h2>
+<p>At Gवन, we harness Artificial Intelligence to deliver tailored health and wellness solutions. Your journey to a better you starts here!</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+<h2>Our Services</h2>
+<div class="services-grid">
+<div class="service-card" data-aos="zoom-in">
+<h3>Personalized Diet Plans</h3>
+<p>Get AI-powered meal plans according to your body needs, allergies, and goals.</p>
+<button onclick="openPopup('diet')">Get Plan</button>
+</div>
+<div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+<h3>Customized Fitness Programs</h3>
+<p>Workout routines customized to your strength, endurance, and health targets.</p>
+<button onclick="openPopup('fitness')">Get Plan</button>
+</div>
+<div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+<h3>AI Health Insights</h3>
+<p>Understand your body's needs and unlock key health recommendations instantly.</p>
+<button onclick="openPopup('health')">Get Insights</button>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+<h2>Testimonials</h2>
+<div class="testimonial" data-aos="fade-right">
+"Gवन gave me a diet plan that finally worked! In just 3 months, I lost 15kg!"
+<br><strong>- Riya Sharma</strong>
+</div>
+<div class="testimonial" data-aos="fade-left">
+"Thanks to their fitness program, I feel stronger and healthier than ever before."
+<br><strong>- Arjun Mehta</strong>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 Gवन - All rights reserved.</p>
+</footer>
+
+<!-- Popup Form -->
+<div class="popup" id="popup">
+<div class="popup-content">
+<span class="close-btn" onclick="closePopup()">&times;</span>
+<h2 id="popup-title">Get Your Plan</h2>
+<form id="popup-form">
+<input type="number" id="age" placeholder="Your Age" required>
+<input type="number" id="weight" placeholder="Your Weight (kg)" required>
+<input type="text" id="allergies" placeholder="Allergies (if any)">
+<input type="text" id="diseases" placeholder="Pre-existing Conditions (if any)">
+<input type="text" id="goals" placeholder="Your Goals" required>
+<button type="submit">Generate Plan</button>
+</form>
+<pre id="generated-plan"></pre>
+<a id="download-btn" download="plan.txt" style="display:none;">Download Plan</a>
+</div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
